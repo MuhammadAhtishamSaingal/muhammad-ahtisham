@@ -66,11 +66,11 @@
         "description": "Discover Joy: Your Ultimate Holiday Gift Destination.",
         "button_link": "/",
         "button_text": "Shop Now",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "title_color": "#000000",
         "text_color": "#000000",
         "button_color": "#000000",
-        "button_text_color": "#FFFFFF",
+        "button_text_color": "#ffffff",
         "nav_button_link": "/",
         "bottom_text": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
         "button_textss": "Shop Now",
@@ -81,10 +81,10 @@
     "grid_CkTVYF": {
       "type": "Grid",
       "blocks": {
-        "image_38xBec": {
+        "image_DHwPNe": {
           "type": "image",
           "settings": {
-            "product_image": "black-leather-bag",
+            "product_image": "black-leather-bag-1",
             "product_title": "Orange Wide Leg",
             "product_price": "980,00€",
             "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
@@ -101,7 +101,7 @@
         }
       },
       "block_order": [
-        "image_38xBec",
+        "image_DHwPNe",
         "image_trMbUR"
       ],
       "settings": {

@@ -56,6 +56,7 @@
     },
     "banner_iBanTj": {
       "type": "Banner",
+      "disabled": true,
       "settings": {
         "logo_text": "TISSO VISION",
         "tagline": "Find the ideal gift for your loved ones.",

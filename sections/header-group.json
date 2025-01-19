@@ -77,11 +77,18 @@
         "button_linkss": "",
         "mobile_descp": "Discover Joy: Your Ultimate Holiday Gift Destination."
       }
+    },
+    "grid_CkTVYF": {
+      "type": "Grid",
+      "settings": {
+        "section_title": "Tisso vision in the wild"
+      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "banner_iBanTj"
+    "banner_iBanTj",
+    "grid_CkTVYF"
   ]
 }

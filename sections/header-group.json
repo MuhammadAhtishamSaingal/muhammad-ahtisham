@@ -85,27 +85,16 @@
         "image_DHwPNe": {
           "type": "image",
           "settings": {
-            "product_image": "black-leather-bag-1",
+            "product_image": "black-shirt",
             "product_title": "Orange Wide Leg",
-            "product_price": "980,00€",
-            "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
-          }
-        },
-        "image_ciLhQD": {
-          "type": "image",
-          "settings": {
-            "product_image": "blue-silk-tuxedo-1",
-            "product_title": "Orange Wide Legs",
             "product_price": "980,00€",
             "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
           }
         }
       },
       "block_order": [
-        "image_DHwPNe",
-        "image_ciLhQD"
+        "image_DHwPNe"
       ],
-      "disabled": true,
       "settings": {
         "section_title": "Tisso vision in the wild"
       }

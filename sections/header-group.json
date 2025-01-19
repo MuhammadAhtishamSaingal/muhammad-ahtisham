@@ -126,6 +126,7 @@
       "block_order": [
         "image_374NCC"
       ],
+      "disabled": true,
       "settings": {
         "section_title": "Tisso vision in the wild"
       }

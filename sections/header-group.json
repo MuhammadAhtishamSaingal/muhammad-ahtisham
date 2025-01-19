@@ -115,6 +115,7 @@
       "blocks": {
         "image_zAkmyB": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "product_image": "black-shirt",
             "product_title": "Orange Wide Leg",

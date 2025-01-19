@@ -112,6 +112,15 @@
     "grid_MaFkcd": {
       "type": "Grid",
       "blocks": {
+        "image_374NCC": {
+          "type": "image",
+          "settings": {
+            "product_image": "blue-silk-tuxedo-1",
+            "product_title": "Orange Wide Leg",
+            "product_price": "980,00€",
+            "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
+          }
+        },
         "image_nrDGa6": {
           "type": "image",
           "settings": {
@@ -123,6 +132,7 @@
         }
       },
       "block_order": [
+        "image_374NCC",
         "image_nrDGa6"
       ],
       "settings": {

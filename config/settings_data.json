@@ -151,11 +151,11 @@
           "description": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
           "button_link": "/",
           "button_text": "Shop Now",
-          "background_color": "#FFFFFF",
+          "background_color": "#ffffff",
           "title_color": "#000000",
           "text_color": "#000000",
           "button_color": "#000000",
-          "button_text_color": "#FFFFFF",
+          "button_text_color": "#ffffff",
           "nav_button_link": "/",
           "bottom_text": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
           "button_textss": "Shop Now",
@@ -168,6 +168,7 @@
         "blocks": {
           "image_WxgqmA": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "product_image": "black-shirt",
               "product_title": "Orange Wide Leg",

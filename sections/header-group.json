@@ -131,6 +131,30 @@
       "settings": {
         "section_title": "Tisso vision in the wild"
       }
+    },
+    "banner_fM7j4i": {
+      "type": "Banner",
+      "settings": {
+        "logo_text": "TISSO VISION",
+        "tagline": "Find the ideal gift for your loved ones.",
+        "nav_button_text": "CHOOSE GIFT",
+        "banner_image": "shopify://shop_images/Frame_1.png",
+        "image": "shopify://shop_images/Frame_2.png",
+        "title": "The Gift Guide",
+        "description": "Discover Joy: Your Ultimate Holiday Gift Destination.",
+        "button_link": "/",
+        "button_text": "Shop Now",
+        "background_color": "#FFFFFF",
+        "title_color": "#000000",
+        "text_color": "#000000",
+        "button_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "nav_button_link": "/",
+        "bottom_text": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
+        "button_textss": "Shop Now",
+        "button_linkss": "",
+        "mobile_descp": "Discover Joy: Your Ultimate Holiday Gift Destination."
+      }
     }
   },
   "order": [
@@ -138,6 +162,7 @@
     "header",
     "banner_iBanTj",
     "grid_CkTVYF",
-    "grid_MaFkcd"
+    "grid_MaFkcd",
+    "banner_fM7j4i"
   ]
 }

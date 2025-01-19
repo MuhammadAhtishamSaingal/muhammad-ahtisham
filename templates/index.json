@@ -51,7 +51,6 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -78,82 +77,13 @@
         "padding_bottom": 36
       }
     },
-    "banner_9FndGJ": {
-      "type": "Banner",
-      "settings": {
-        "logo_text": "TISSO VISION",
-        "tagline": "Find the ideal gift for your loved ones.",
-        "nav_button_text": "CHOOSE GIFT",
-        "banner_image": "shopify://shop_images/Frame_1.png",
-        "image": "shopify://shop_images/Frame.png",
-        "title": "The Gift Guide",
-        "description": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
-        "button_link": "/",
-        "button_text": "Shop Now",
-        "background_color": "#ffffff",
-        "title_color": "#000000",
-        "text_color": "#000000",
-        "button_color": "#000000",
-        "button_text_color": "#ffffff",
-        "nav_button_link": "/",
-        "bottom_text": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
-        "button_textss": "Shop Now",
-        "button_linkss": "",
-        "mobile_descp": "Discover Joy: Your Ultimate Holiday Gift Destination."
-      }
-    },
-    "grid_JdrBim": {
+    "grid_yPqRhj": {
       "type": "Grid",
       "blocks": {
-        "image_tNpUa3": {
+        "image_EFmntB": {
           "type": "image",
           "settings": {
-            "product_image": "jacketss",
-            "product_title": "Orange Wide Leg",
-            "product_price": "980,00€",
-            "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
-          }
-        },
-        "image_HYjiUa": {
-          "type": "image",
-          "settings": {
-            "product_image": "blak-shirt",
-            "product_title": "Tailored Jacket",
-            "product_price": "980,00€",
-            "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
-          }
-        },
-        "image_ADVngU": {
-          "type": "image",
-          "settings": {
-            "product_image": "blue-shirt",
-            "product_title": "Accordion Pleated Dress",
-            "product_price": "980,00€",
-            "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
-          }
-        },
-        "image_yQaTXX": {
-          "type": "image",
-          "settings": {
-            "product_image": "jacketss-1",
-            "product_title": "Green Trench Coat",
-            "product_price": "980,00€",
-            "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
-          }
-        },
-        "image_r7k9Pf": {
-          "type": "image",
-          "settings": {
-            "product_image": "first-prooduct",
-            "product_title": "Tennis Blue T-Shirt",
-            "product_price": "980,00€",
-            "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
-          }
-        },
-        "image_daGiDT": {
-          "type": "image",
-          "settings": {
-            "product_image": "red-shirt",
+            "product_image": "black-shirt",
             "product_title": "Orange Wide Leg",
             "product_price": "980,00€",
             "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
@@ -161,14 +91,8 @@
         }
       },
       "block_order": [
-        "image_tNpUa3",
-        "image_HYjiUa",
-        "image_ADVngU",
-        "image_yQaTXX",
-        "image_r7k9Pf",
-        "image_daGiDT"
+        "image_EFmntB"
       ],
-      "disabled": true,
       "settings": {
         "section_title": "Tisso vision in the wild"
       }
@@ -177,7 +101,6 @@
   "order": [
     "image_banner",
     "featured_collection",
-    "banner_9FndGJ",
-    "grid_JdrBim"
+    "grid_yPqRhj"
   ]
 }

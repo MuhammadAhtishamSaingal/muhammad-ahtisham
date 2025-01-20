@@ -166,6 +166,15 @@
       "Grid": {
         "type": "Grid",
         "blocks": {
+          "image_Djd4Th": {
+            "type": "image",
+            "settings": {
+              "product_image": "black-shirt",
+              "product_title": "Orange Wide Leg",
+              "product_price": "980,00€",
+              "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
+            }
+          },
           "image_Bw3TtR": {
             "type": "image",
             "settings": {
@@ -177,6 +186,7 @@
           }
         },
         "block_order": [
+          "image_Djd4Th",
           "image_Bw3TtR"
         ],
         "settings": {

@@ -71,6 +71,9 @@ a.shop-now-button {
   margin-bottom: 75px;
 }
 
+
+
+
 /* Make sure the height adapts on mobile */
 @media screen and (max-width: 768px) {
   .banner-section {

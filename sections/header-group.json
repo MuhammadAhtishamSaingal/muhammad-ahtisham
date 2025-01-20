@@ -53,107 +53,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "banner_iBanTj": {
-      "type": "Banner",
-      "disabled": true,
-      "settings": {
-        "logo_text": "TISSO VISION",
-        "tagline": "Find the ideal gift for your loved ones.",
-        "nav_button_text": "CHOOSE GIFT",
-        "banner_image": "shopify://shop_images/Frame_1.png",
-        "image": "shopify://shop_images/Frame_2.png",
-        "title": "The Gift Guide",
-        "description": "Discover Joy: Your Ultimate Holiday Gift Destination.",
-        "button_link": "/",
-        "button_text": "Shop Now",
-        "background_color": "#ffffff",
-        "title_color": "#000000",
-        "text_color": "#000000",
-        "button_color": "#000000",
-        "button_text_color": "#ffffff",
-        "nav_button_link": "/",
-        "bottom_text": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
-        "button_textss": "Shop Now",
-        "button_linkss": "",
-        "mobile_descp": "Discover Joy: Your Ultimate Holiday Gift Destination."
-      }
-    },
-    "banner_fM7j4i": {
-      "type": "Banner",
-      "disabled": true,
-      "settings": {
-        "logo_text": "TISSO VISION",
-        "tagline": "Find the ideal gift for your loved ones.",
-        "nav_button_text": "CHOOSE GIFT",
-        "banner_image": "shopify://shop_images/Frame_1.png",
-        "image": "shopify://shop_images/Frame_2.png",
-        "title": "The Gift Guide",
-        "description": "Discover Joy: Your Ultimate Holiday Gift Destination.",
-        "button_link": "/",
-        "button_text": "Shop Now",
-        "background_color": "#ffffff",
-        "title_color": "#000000",
-        "text_color": "#000000",
-        "button_color": "#000000",
-        "button_text_color": "#ffffff",
-        "nav_button_link": "/",
-        "bottom_text": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
-        "button_textss": "Shop Now",
-        "button_linkss": "",
-        "mobile_descp": "Discover Joy: Your Ultimate Holiday Gift Destination."
-      }
-    },
-    "grid_CkTVYF": {
-      "type": "Grid",
-      "blocks": {
-        "image_DHwPNe": {
-          "type": "image",
-          "settings": {
-            "product_image": "black-shirt",
-            "product_title": "Orange Wide Leg",
-            "product_price": "980,00€",
-            "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
-          }
-        }
-      },
-      "block_order": [
-        "image_DHwPNe"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_title": "Tisso vision in the wild"
-      }
-    },
-    "grid_MaFkcd": {
-      "type": "Grid",
-      "blocks": {
-        "image_zAkmyB": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "product_image": "black-shirt",
-            "product_title": "Orange Wide Leg",
-            "product_price": "980,00€",
-            "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
-          }
-        }
-      },
-      "block_order": [
-        "image_zAkmyB"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_title": "Tisso vision in the wild"
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "banner_iBanTj",
-    "banner_fM7j4i",
-    "grid_CkTVYF",
-    "grid_MaFkcd"
+    "header"
   ]
 }

@@ -97,11 +97,6 @@ a.shop-now-button {
   padding: 20px;
 }
 
-
-
-
-
-
 /* Basic button styling */
 .add-to-cart {
   display: inline-flex;
@@ -116,6 +111,9 @@ a.shop-now-button {
   position: relative;
   overflow: hidden;
 }
+
+
+
 
 .add-to-cart svg {
   margin-left: 10px;

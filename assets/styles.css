@@ -30,6 +30,7 @@ li.size-option:hover {
   cursor: pointer;
 }
 
+
 .selected {
   background-color: black;
   color: white;

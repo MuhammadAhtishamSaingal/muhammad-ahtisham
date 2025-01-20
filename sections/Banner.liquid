@@ -40,7 +40,7 @@
     ></a>
   </div>
 </div>
-             
+
 <!-- Full-Width Banner Image -->
 <div class="full-width-banner">
   {% if section.settings.banner_image %}
@@ -62,18 +62,18 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="12" viewBox="0 0 36 12" fill="none">
             <path d="M1.40918 5.25L0.65918 5.25L0.65918 6.75L1.40918 6.75L1.40918 5.25ZM35.639 6.53033C35.9319 6.23744 35.9319 5.76257 35.639 5.46967L30.866 0.696701C30.5731 0.403808 30.0983 0.403808 29.8054 0.696701C29.5125 0.989594 29.5125 1.46447 29.8054 1.75736L34.048 6L29.8054 10.2426C29.5125 10.5355 29.5125 11.0104 29.8054 11.3033C30.0983 11.5962 30.5731 11.5962 30.866 11.3033L35.639 6.53033ZM1.40918 6.75L35.1087 6.75L35.1087 5.25L1.40918 5.25L1.40918 6.75Z" fill="white"/>
           </svg>
-        </span>                                                                       
+        </span>
       </a>
     </div>
-                             
+
     <!-- Full-Width Image Section -->
     <div class="gift-guide-illustration desktop_image">
       {% if section.settings.image %}
         <img src="{{ section.settings.image | img_url: 'master' }}" alt="Gift Guide Illustration">
       {% else %}
-        <p>No image selected</p>    
+        <p>No image selected</p>
       {% endif %}
-    </div>                               
+    </div>
 
     <div class="mobile_data">
       <div class="mobile_decription">
@@ -88,9 +88,7 @@
           </span>
         </a>
       </div>
-    </div>     
-
-          
+    </div>
   </div>
   <div class="bottom_texts">
     <p>{{ section.settings.bottom_text }}</p>
@@ -127,8 +125,6 @@
       "id": "banner_image",
       "label": "Banner Image"
     },
-
-    
        {
       "type": "image_picker",
       "id": "image",
@@ -148,14 +144,12 @@
       "label": "Description",
       "default": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
     },
-
     {
       "type": "url",
       "id": "button_link",
       "label": "Gift Guide Button Link",
       "default": "/"
     },
-   
     {
       "type": "text",
       "id": "button_text",
@@ -175,9 +169,6 @@
       "label": "Gift Guide Title Color",
       "default": "#000000"
     },
-
-
-    
     {
       "type": "color",
       "id": "text_color",
@@ -205,8 +196,8 @@
     {
       "type": "image_picker",
       "id": "banner_imagess",
-      "label": "Mobile Background Image" 
-    },                                                                  
+      "label": "Mobile Background Image"
+    },
     {
       "type": "text",
       "id": "bottom_text",
@@ -245,13 +236,6 @@
 }
 {% endschema %}
 
-
-
-
-
-
-              
-
 <script>
   const menuIcon = document.getElementById('menu-icon');
   const closeIcon = document.getElementById('close-icon');
@@ -269,12 +253,3 @@
     menuIcon.style.display = 'flex';
   });
 </script>
-
-
-
-
-
-
-
-
-

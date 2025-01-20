@@ -81,6 +81,7 @@
     },
     "banner_fM7j4i": {
       "type": "Banner",
+      "disabled": true,
       "settings": {
         "logo_text": "TISSO VISION",
         "tagline": "Find the ideal gift for your loved ones.",
@@ -91,11 +92,11 @@
         "description": "Discover Joy: Your Ultimate Holiday Gift Destination.",
         "button_link": "/",
         "button_text": "Shop Now",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "title_color": "#000000",
         "text_color": "#000000",
         "button_color": "#000000",
-        "button_text_color": "#FFFFFF",
+        "button_text_color": "#ffffff",
         "nav_button_link": "/",
         "bottom_text": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
         "button_textss": "Shop Now",
@@ -119,6 +120,7 @@
       "block_order": [
         "image_DHwPNe"
       ],
+      "disabled": true,
       "settings": {
         "section_title": "Tisso vision in the wild"
       }

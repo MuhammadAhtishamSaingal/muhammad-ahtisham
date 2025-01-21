@@ -22,7 +22,7 @@ li.size-option:hover {
 }
 .size-option {
   background-color: white;
-  color: black;
+  color: black;   
   display: flex;
   align-items: center;
   justify-content: center;

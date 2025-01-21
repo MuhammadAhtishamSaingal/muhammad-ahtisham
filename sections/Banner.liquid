@@ -1,77 +1,72 @@
 <nav class="menuss">
-               
-  <div class="menu">  
-    <div class="menu-icon" id="menu-icon"> 
-      <span class="menar"></span>                             
-      <span class="menu-bar"></span>          
+  <div class="menu">
+    <div class="menu-icon" id="menu-icon">
       <span class="menu-bar"></span>
-    </div>          
-    
-      <div class="close-icon" id="close-icon"  >
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </div>
+    <div class="close-icon" id="close-icon">
       <span class="close-bar"></span>
       <span class="close-bar"></span>
     </div>
-    
     <div class="logo">TISSO VISON</div>
-  </div>         
-
-  
-    <div class="menu-content" id="menu-content                                                                         
+  </div>
+  <div class="menu-content" id="menu-content">
     <p>Find the ideal gift for your loved ones.</p>
     <a href="#" class="cta-button"
-      >CHOOSE GIFT 
-      <span class="arrow_icon">                                                                       
-       <svg xmlns="http://www.w3.org/2000/svg" width="31" height="12" viewBox="0 0 31 12" fill="none">
-          <path d="M1.36377 4.80469L0.61377 4.80469L0.613769 6.30469L1.36377 6.30469L1.36377 4.80469ZM30.184 6 .08502C30.4768 5.79213 30.4768 5.31725 30.184 5.02436L25.411 0.251388C25.1181 -0.0415052 24.6432 -0.0415052 24.3503 0.251388C24.0574 0.544282 24.0574 1.01916 24.3503 1.31205L28.593 5.55469L24.3503 9.79733C24.0574 10.0902 24.0574 10.5651 24.3503 10.858C24.6432 11.1509 25.1181 11.1509 25.411 10.858L30.184 6.08502ZM1.36377 6.30469L29.6536 6.30469L29.6536 4.80469L1.36377 4.80469L1.36377 6.30469Z" fill="black"/>
+      >CHOOSE GIFT
+      <span class="arrow_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="12" viewBox="0 0 31 12" fill="none">
+          <path d="M1.36377 4.80469L0.61377 4.80469L0.613769 6.30469L1.36377 6.30469L1.36377 4.80469ZM30.184 6.08502C30.4768 5.79213 30.4768 5.31725 30.184 5.02436L25.411 0.251388C25.1181 -0.0415052 24.6432 -0.0415052 24.3503 0.251388C24.0574 0.544282 24.0574 1.01916 24.3503 1.31205L28.593 5.55469L24.3503 9.79733C24.0574 10.0902 24.0574 10.5651 24.3503 10.858C24.6432 11.1509 25.1181 11.1509 25.411 10.858L30.184 6.08502ZM1.36377 6.30469L29.6536 6.30469L29.6536 4.80469L1.36377 4.80469L1.36377 6.30469Z" fill="black"/>
         </svg></span
     ></a>
   </div>
-<          /nav>
-            
-<!-- Custom Navigation Bar -->
-            
-<div class="custom-nav-bar">                                                                                                                                                            
-  <div class="logo">
-    <h1></h1>
-  </div>          
-  <div class="tagline">
-     <p></p>
-  </div>
+</nav>
 <!-- Custom Navigation Bar -->
 <div class="custom-nav-bar">
-  <div class="logo">  
-             
-    <h1>hhead</h1>
+  <div class="logo">
+    <h1>{{ section.settings.logo_text }}</h1>
   </div>
   <div class="tagline">
-    <p>lorem</p                                                      
+    <p>{{ section.settings.tagline }}</p>
   </div>
-  <div class="full-width-banner">
+  <div class="buttonss">
+    <a href="{{ section.settings.nav_button_link }}" class="cta-button">
+      {{- section.settings.nav_button_text }}
+      <span class="arows">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="12" viewBox="0 0 31 12" fill="none">
+          <path d="M1.36377 4.80469L0.61377 4.80469L0.613769 6.30469L1.36377 6.30469L1.36377 4.80469ZM30.184 6.08502C30.4768 5.79213 30.4768 5.31725 30.184 5.02436L25.411 0.251388C25.1181 -0.0415052 24.6432 -0.0415052 24.3503 0.251388C24.0574 0.544282 24.0574 1.01916 24.3503 1.31205L28.593 5.55469L24.3503 9.79733C24.0574 10.0902 24.0574 10.5651 24.3503 10.858C24.6432 11.1509 25.1181 11.1509 25.411 10.858L30.184 6.08502ZM1.36377 6.30469L29.6536 6.30469L29.6536 4.80469L1.36377 4.80469L1.36377 6.30469Z" fill="black"/>
+        </svg></span
+    ></a>
+  </div>
+</div>
+
+<!-- Full-Width Banner Image -->
+<div class="full-width-banner">
   {% if section.settings.banner_image %}
-    <img src= alt="Banner Image">
+    <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="Banner Image">
   {% else %}
     <p>No banner image selected</p>
   {% endif %}
 </div>
 
-  
 <!-- Gift Guide Section -->
 <section class="gift-guide-section">
   <div class="main_devss">
-    <div class="gift-guide-content"
-                                                                          
-      <h2 class="gift-guide-title">HEADIN</h2>
-      <p class="gift-guide-text">DESCP</p>
-      <a href="#" class="shop-now-button">
+    <div class="gift-guide-content">
+      <h2 class="gift-guide-title">{{ section.settings.title }}</h2>
+      <p class="gift-guide-text">{{ section.settings.description }}</p>
+      <a href="{{ section.settings.button_link }}" class="shop-now-button">
+        {{- section.settings.button_text -}}
         <span class="arrowss">
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="12" viewBox="0 0 36 12" fill="none">
             <path d="M1.40918 5.25L0.65918 5.25L0.65918 6.75L1.40918 6.75L1.40918 5.25ZM35.639 6.53033C35.9319 6.23744 35.9319 5.76257 35.639 5.46967L30.866 0.696701C30.5731 0.403808 30.0983 0.403808 29.8054 0.696701C29.5125 0.989594 29.5125 1.46447 29.8054 1.75736L34.048 6L29.8054 10.2426C29.5125 10.5355 29.5125 11.0104 29.8054 11.3033C30.0983 11.5962 30.5731 11.5962 30.866 11.3033L35.639 6.53033ZM1.40918 6.75L35.1087 6.75L35.1087 5.25L1.40918 5.25L1.40918 6.75Z" fill="white"/>
           </svg>
         </span>
       </a>
-                                 
     </div>
-  <!-- Full-Width Image Section -->
+
+    <!-- Full-Width Image Section -->
     <div class="gift-guide-illustration desktop_image">
       {% if section.settings.image %}
         <img src="{{ section.settings.image | img_url: 'master' }}" alt="Gift Guide Illustration">
@@ -79,11 +74,12 @@
         <p>No image selected</p>
       {% endif %}
     </div>
-           
+
     <div class="mobile_data">
       <div class="mobile_decription">
         <p>{{ section.settings.mobile_descp }}</p>
-       <div class="banner-sectionss">
+      </div>
+      <div class="banner-sectionss">
         <a href="/" class="banner-buttonss"
           >Shop Now<span class="arrowss">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="12" viewBox="0 0 36 12" fill="none">
@@ -94,3 +90,166 @@
       </div>
     </div>
   </div>
+  <div class="bottom_texts">
+    <p>{{ section.settings.bottom_text }}</p>
+  </div>
+</section>
+<style>
+  .banner-sectionss{background-image:url("{{ section.settings.banner_imagess | img_url: 'master' }}");
+               }
+</style>
+{% schema %}
+{
+  "name": "Banners",
+  "settings": [
+        {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo Text",
+      "default": "TISSO VISION"
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "Find the ideal gift for your loved ones."
+    },
+    {
+      "type": "text",
+      "id": "nav_button_text",
+      "label": "Navigation Button Text",
+      "default": "CHOOSE GIFT"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    },
+       {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Gift Guide Illustration Image"
+    },
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "The Gift Guide"
+    },
+
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Gift Guide Button Link",
+      "default": "/"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Gift Guide Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Gift Guide Background Color",
+      "default": "#FFFFFF"
+    },
+
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Gift Guide Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Gift Guide Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Gift Guide Button Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Gift Guide Button Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "url",
+      "id": "nav_button_link",
+      "label": "Navigation Button Link",
+      "default": "/"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_imagess",
+      "label": "Mobile Background Image"
+    },
+    {
+      "type": "text",
+      "id": "bottom_text",
+      "label": "Button Text",
+      "default": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR"
+    },
+    {
+      "type": "text",
+      "id": "button_textss",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_linkss",
+      "label": "Mobile Button Link"
+    },
+    {
+      "type": "text",
+      "id": "mobile_descp",
+      "label": "Button Text",
+      "default": "Discover Joy: Your Ultimate Holiday Gift Destination."
+    }
+
+  ],
+  "presets": [
+    {
+      "name": "Banner",
+      "category": "Custom Sections",
+      "settings": {
+        "title": "The Gift Guide",
+        "description": "Discover Joy: Your Ultimate Holiday Gift Destination."
+      }
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const menuContent = document.getElementById('menu-content');
+
+  menuIcon.addEventListener('click', () => {
+    menuContent.classList.add('show');
+    menuIcon.style.display = 'none';
+    closeIcon.style.display = 'flex';
+  });
+
+  closeIcon.addEventListener('click', () => {
+    menuContent.classList.remove('show');
+    closeIcon.style.display = 'none';
+    menuIcon.style.display = 'flex';
+  });
+</script>

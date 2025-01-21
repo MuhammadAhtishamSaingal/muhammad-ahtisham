@@ -45,3 +45,11 @@
   <div class="tagline">
     <p>lorem</p>
   </div>
+  <div class="full-width-banner">
+  {% if section.settings.banner_image %}
+    <img src= alt="Banner Image">
+  {% else %}
+    <p>No banner image selected</p>
+  {% endif %}
+</div>
+

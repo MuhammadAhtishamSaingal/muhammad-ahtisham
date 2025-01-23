@@ -617,6 +617,7 @@ h2.gift-guide-title {
     justify-content: center;
     margin-left: unset;
   }
+  
   .popup-image {
     display: grid;
     grid-template-columns: 41% 60%;
@@ -656,6 +657,9 @@ h2.gift-guide-title {
     text-align: left;
     line-height: 1.4;
   }
+
+
+  
   .products_details .price {
     font-family: Lustria;
     font-size: 12px;

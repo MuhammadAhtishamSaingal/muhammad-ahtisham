@@ -64,11 +64,6 @@
           </svg>
         </span>
       </a>
-
-
-
-
-              
     </div>
 
     <!-- Full-Width Image Section -->
@@ -79,7 +74,7 @@
         <p>No image selected</p>
       {% endif %}
     </div>
-       
+
     <div class="mobile_data">
       <div class="mobile_decription">
         <p>{{ section.settings.mobile_descp }}</p>
@@ -125,7 +120,6 @@
       "label": "Navigation Button Text",
       "default": "CHOOSE GIFT"
     },
-    
     {
       "type": "image_picker",
       "id": "banner_image",
@@ -144,7 +138,7 @@
       "default": "The Gift Guide"
     },
 
-    { 
+    {
       "type": "textarea",
       "id": "description",
       "label": "Description",
@@ -155,7 +149,7 @@
       "id": "button_link",
       "label": "Gift Guide Button Link",
       "default": "/"
-    }, 
+    },
     {
       "type": "text",
       "id": "button_text",
@@ -168,6 +162,7 @@
       "label": "Gift Guide Background Color",
       "default": "#FFFFFF"
     },
+
     {
       "type": "color",
       "id": "title_color",
@@ -207,7 +202,7 @@
       "type": "text",
       "id": "bottom_text",
       "label": "Button Text",
-      "default": "SUSTAINABLE, EAR"
+      "default": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR"
     },
     {
       "type": "text",
@@ -224,45 +219,37 @@
       "type": "text",
       "id": "mobile_descp",
       "label": "Button Text",
-      "default": "Discover Joy: Your Ultimate ."
+      "default": "Discover Joy: Your Ultimate Holiday Gift Destination."
     }
 
   ],
-  "presets": [                                                                                                     
+  "presets": [
     {
       "name": "Banner",
-      "category": "Custom ",
+      "category": "Custom Sections",
       "settings": {
         "title": "The Gift Guide",
-        "description": "Discover Joy: Your Ultimate ."
+        "description": "Discover Joy: Your Ultimate Holiday Gift Destination."
       }
-    } 
+    }
   ]
 }
 {% endschema %}
 
 <script>
   const menuIcon = document.getElementById('menu-icon');
-  
   const closeIcon = document.getElementById('close-icon');
-
   const menuContent = document.getElementById('menu-content');
 
   menuIcon.addEventListener('click', () => {
-
     menuContent.classList.add('show');
-
     menuIcon.style.display = 'none';
-
     closeIcon.style.display = 'flex';
   });
 
   closeIcon.addEventListener('click', () => {
-    
     menuContent.classList.remove('show');
-    
     closeIcon.style.display = 'none';
-    
     menuIcon.style.display = 'flex';
   });
 </script>

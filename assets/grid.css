@@ -32,7 +32,6 @@ span.colorss {
   line-height: 43.2px;
   text-align: left;
 }
-
 .dropdown-lists {
   list-style: none;
   margin: 0;
@@ -44,8 +43,6 @@ span.colorss {
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-
-
 
 .dropdown-lists li {
   padding: 10px;

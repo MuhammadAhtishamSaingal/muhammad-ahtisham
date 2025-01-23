@@ -1000,8 +1000,6 @@ h2.gift-guide-title {
     align-items: flex-start;
   }
 }
-
-
 @media only screen and (min-width: 414px) and (max-width: 490px) {
   .popup-image {
     display: grid;
@@ -1037,8 +1035,6 @@ h2.gift-guide-title {
     margin-bottom: 20px;
     margin: 0 auto;
   }
-
-  
   .add-to-cart {
     font-size: 10px;
     align-items: center;

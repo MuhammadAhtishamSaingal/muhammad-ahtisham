@@ -83,14 +83,16 @@
                             <span class="emptys"></span>
                           </div>
 
-
                           <!-- Initially hidden dropdown list -->
                           <ul
                             class="dropdown-lists"
                             style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;"
                           >
+                            
                             {% for value in option.values %}
+                              
                               <li data-value="{{ value | strip }}" class="size-option">{{ value | strip }}</li>
+                              
                             {% endfor %}
                           </ul>
                         </div>

@@ -11,7 +11,6 @@
               <div class="plus-icon">+</div>
             </div>
 
-
             {% assign product = block.settings.product_image %}
             <script>
 
@@ -39,10 +38,7 @@
                     </div>
                   </div>
                   <div data-parent="{{  product.id }}" class="popup-details">
-
-                    
                     <!-- color -->
-
 
                     {% for option in product.options_with_values %}
                       {% if option.name == 'Color' %}
@@ -71,7 +67,7 @@
                           </div>
                         </div>
                       {% endif %}
-                    {% endfor %}  
+                    {% endfor %}
 
                     <!-- Size Options -->
                     {% for option in product.options_with_values %}
@@ -88,11 +84,8 @@
                             class="dropdown-lists"
                             style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;"
                           >
-                            
                             {% for value in option.values %}
-                              
                               <li data-value="{{ value | strip }}" class="size-option">{{ value | strip }}</li>
-                              
                             {% endfor %}
                           </ul>
                         </div>
@@ -119,9 +112,6 @@
     </div>
   </div>
 </section>
-
-
-                            
 {% schema %}
 {
   "name": "Grid",
@@ -177,11 +167,9 @@
 <script>
   document.querySelectorAll('.dropdown-container').forEach(container => {
 
-     const customSelectBox = container.querySelector('.drop-downs');
-     const customSelectList = container.querySelector('.dropdown-lists');
-     const addToCartForm = document.querySelector('.add_form');
-
-    
+      const customSelectBox = container.querySelector('.drop-downs');
+      const customSelectList = container.querySelector('.dropdown-lists');
+      const addToCartForm = document.querySelector('.add_form');
 
       // Toggle dropdown open/close and rotate arrow
       customSelectBox.addEventListener('click', function() {
@@ -202,9 +190,6 @@
           });
       });
 
-
-
-    
       // Close dropdown if clicked outside
       document.addEventListener('click', function(e) {
           if (!container.contains(e.target)) {

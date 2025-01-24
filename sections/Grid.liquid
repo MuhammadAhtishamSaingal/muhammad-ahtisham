@@ -177,10 +177,9 @@
 <script>
   document.querySelectorAll('.dropdown-container').forEach(container => {
 
-      const customSelectBox = container.querySelector('.drop-downs');
-      const customSelectList = container.querySelector('.dropdown-lists');
-      const addToCartForm = document.querySelector('.add_form');
-
+     const customSelectBox = container.querySelector('.drop-downs');
+     const customSelectList = container.querySelector('.dropdown-lists');
+     const addToCartForm = document.querySelector('.add_form');
 
 
       // Toggle dropdown open/close and rotate arrow
@@ -188,6 +187,8 @@
         
         container.classList.toggle('active');
       });
+
+
 
       // Select item and update dropdown
       customSelectList.querySelectorAll('li').forEach(item => {
@@ -202,6 +203,9 @@
           });
       });
 
+
+
+    
       // Close dropdown if clicked outside
       document.addEventListener('click', function(e) {
           if (!container.contains(e.target)) {

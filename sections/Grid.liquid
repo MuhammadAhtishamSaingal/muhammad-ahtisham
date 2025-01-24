@@ -12,9 +12,6 @@
             </div>
 
 
-
-
-
             {% assign product = block.settings.product_image %}
             <script>
 
@@ -43,14 +40,11 @@
                   </div>
                   <div data-parent="{{  product.id }}" class="popup-details">
 
-
-            
                     
                     <!-- color -->
 
 
-            
-
+        
                     {% for option in product.options_with_values %}
                       {% if option.name == 'Color' %}
                         <div class="{{ option.name }}-options new_colors">

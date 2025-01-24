@@ -166,6 +166,51 @@
       "Grid": {
         "type": "Grid",
         "blocks": {
+          "image_pU7KFG": {
+            "type": "image",
+            "settings": {
+              "product_image": "blue-silk-tuxedo",
+              "product_title": "Orange Wide Leg",
+              "product_price": "980,00€",
+              "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
+            }
+          },
+          "image_DC4tme": {
+            "type": "image",
+            "settings": {
+              "product_image": "chequered-red-shirt",
+              "product_title": "Orange Wide Leg",
+              "product_price": "980,00€",
+              "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
+            }
+          },
+          "image_Nc3ytQ": {
+            "type": "image",
+            "settings": {
+              "product_image": "",
+              "product_title": "Orange Wide Leg",
+              "product_price": "980,00€",
+              "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
+            }
+          },
+          "image_gyH8wr": {
+            "type": "image",
+            "settings": {
+              "product_image": "",
+              "product_title": "Orange Wide Leg",
+              "product_price": "980,00€",
+              "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
+            }
+          },
+          "image_Qni9t9": {
+            "type": "image",
+            "settings": {
+              "product_image": "",
+              "product_title": "Orange Wide Leg",
+              "product_price": "980,00€",
+              "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
+            }
+          },
           "image_JtdBwe": {
             "type": "image",
             "settings": {
@@ -186,6 +231,11 @@
           }
         },
         "block_order": [
+          "image_pU7KFG",
+          "image_DC4tme",
+          "image_Nc3ytQ",
+          "image_gyH8wr",
+          "image_Qni9t9",
           "image_JtdBwe",
           "image_Djd4Th"
         ],

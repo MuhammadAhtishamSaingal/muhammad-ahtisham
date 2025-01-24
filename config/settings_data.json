@@ -166,6 +166,15 @@
       "Grid": {
         "type": "Grid",
         "blocks": {
+          "image_JtdBwe": {
+            "type": "image",
+            "settings": {
+              "product_image": "black-leather-bag",
+              "product_title": "Orange Wide Leg",
+              "product_price": "980,00€",
+              "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
+            }
+          },
           "image_Djd4Th": {
             "type": "image",
             "settings": {
@@ -177,6 +186,7 @@
           }
         },
         "block_order": [
+          "image_JtdBwe",
           "image_Djd4Th"
         ],
         "settings": {

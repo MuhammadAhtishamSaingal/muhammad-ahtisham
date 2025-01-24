@@ -193,6 +193,15 @@
               "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
             }
           },
+          "image_ewW3tW": {
+            "type": "image",
+            "settings": {
+              "product_image": "classic-varsity-top",
+              "product_title": "Orange Wide Leg",
+              "product_price": "980,00€",
+              "product_description": "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief."
+            }
+          },
           "image_gyH8wr": {
             "type": "image",
             "settings": {
@@ -234,6 +243,7 @@
           "image_pU7KFG",
           "image_DC4tme",
           "image_Nc3ytQ",
+          "image_ewW3tW",
           "image_gyH8wr",
           "image_Qni9t9",
           "image_JtdBwe",

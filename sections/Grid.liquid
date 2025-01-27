@@ -327,36 +327,36 @@
     });
   });
 
-  //   document.querySelectorAll(".add-to-cart").forEach(atc=>{
-  //     atc.addEventListener("click", function(e){
+    document.querySelectorAll(".add-to-cart").forEach(atc=>{
+      atc.addEventListener("click", function(e){
 
 
-  //       e.preventDefault();
-  //       let $this = this;
+        e.preventDefault();
+        let $this = this;
 
-  //       let _product = this.dataset.product;
-  //       all_products.forEach(product=>{
-  //     if(product.product == _product){
+        let _product = this.dataset.product;
+        all_products.forEach(product=>{
+      if(product.product == _product){
 
-  //       let parentObect = document.querySelector('[data-parent="'+ product.product +'"]');
+        let parentObect = document.querySelector('[data-parent="'+ product.product +'"]');
 
-  //       let size = parentObect.querySelector(".drop-downs").innerText.trim();
-  //       let color = parentObect.querySelector("input:checked").value;
+        let size = parentObect.querySelector(".drop-downs").innerText.trim();
+        let color = parentObect.querySelector("input:checked").value;
      
 
-  //       let variants = JSON.parse(product.variants);
-  //       variants.forEach(variant=>{
+        let variants = JSON.parse(product.variants);
+        variants.forEach(variant=>{
 
-  //         if(variant.option1 == size && variant.option2 == color){
-  //         this.closest("form").querySelector("input[name='id']").value = variant.id;
-  //         this.closest("form").submit();
+          if(variant.option1 == size && variant.option2 == color){
+          this.closest("form").querySelector("input[name='id']").value = variant.id;
+          this.closest("form").submit();
 
-  //         }
-  //       })
-  //     }
-  // })
-  //     })
-  //   })
+          }
+        })
+      }
+  })
+      })
+    })
 
   const closeButtons = document.querySelectorAll('.close');
 

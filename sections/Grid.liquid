@@ -381,4 +381,26 @@
   //   });
   // });
 </script>
+<script>
+  // Select all divs with the class .Color-option and .Size-option
+  const colorOptions = document.querySelectorAll('.Color-option');
+  const sizeOptions = document.querySelectorAll('.size-option');
+
+  // Function to handle selection of options
+  function handleSelection(options) {
+      options.forEach(option => {
+          option.addEventListener('click', function() {
+              // Remove the 'selected' class from all options in the same group
+              options.forEach(option => option.classList.remove('selected'));
+
+              // Add the 'selected' class to the clicked option
+              this.classList.add('selected');
+          });
+      });
+  }
+
+  // Apply the function to color options and size options
+  handleSelection(colorOptions);
+  handleSelection(sizeOptions);
+</script>
 

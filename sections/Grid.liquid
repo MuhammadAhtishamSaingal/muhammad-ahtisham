@@ -228,13 +228,13 @@
       });
 
       // Close the popup if clicked outside of it
-      document.addEventListener('click', function(event) {
-        popups.forEach(function(popup) {
-          if (!popup.contains(event.target) && !event.target.closest('.image-wrapper')) {
-            popup.style.display = 'none';
-          }
-        });
-      });
+      // document.addEventListener('click', function(event) {
+      //   popups.forEach(function(popup) {
+      //     if (!popup.contains(event.target) && !event.target.closest('.image-wrapper')) {
+      //       popup.style.display = 'none';
+      //     }
+      //   });
+      // });
 
       // Capture the selected size from the list items
       var sizeOptions = document.querySelectorAll('.size-option');

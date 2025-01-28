@@ -165,222 +165,221 @@
 {% endschema %}
 
 <script>
-  document.querySelectorAll('.dropdown-container').forEach(container => {
+    document.querySelectorAll('.dropdown-container').forEach(container => {
 
-      const customSelectBox = container.querySelector('.drop-downs');
-      const customSelectList = container.querySelector('.dropdown-lists');
-      const addToCartForm = document.querySelector('.add_form');
+        const customSelectBox = container.querySelector('.drop-downs');
+        const customSelectList = container.querySelector('.dropdown-lists');
+        const addToCartForm = document.querySelector('.add_form');
 
-      // Toggle dropdown open/close and rotate arrow
-      customSelectBox.addEventListener('click', function() {
-        
-        container.classList.toggle('active');
-      });
+        // Toggle dropdown open/close and rotate arrow
+        customSelectBox.addEventListener('click', function() {
 
-      // Select item and update dropdown
-      customSelectList.querySelectorAll('li').forEach(item => {
-          item.addEventListener('click', function() {
-            
-              customSelectBox.innerHTML = this.innerHTML;
-              container.classList.remove('active'); // Close dropdown after selection
-              customSelectList.style.maxHeight = '0'; // Collapse dropdown
-              addToCartForm.style.marginTop = '0'; // Move Add to Cart button back up
-              // Center the text after selection
-              customSelectBox.classList.add('center-text');
-          });
-      });
-
-      // Close dropdown if clicked outside
-      document.addEventListener('click', function(e) {
-          if (!container.contains(e.target)) {
-              container.classList.remove('active');
-          }
-      });
-  });
-
-
-
-    document.addEventListener("DOMContentLoaded", function() {
-      var imageWrappers = document.querySelectorAll('.image-wrapper');
-      var popups = document.querySelectorAll('.popup');
-      var closeButtons = document.querySelectorAll('.close');
-      var selectedSize = ""; // Placeholder for selected size
-
-      // Handle image click to show popup
-     
-      imageWrappers.forEach(function(wrapper) {
-        wrapper.addEventListener('click', function() {
-           document.querySelectorAll('div.popupss').forEach(function(popup) {
-      popup.style.display = 'none';
-  });
-          var popupId = wrapper.getAttribute('data-popup');
-          var popup = document.getElementById(popupId);
-          popup.style.display = 'block';
-          popup.style.left = wrapper.offsetWidth + 'px'; // Show the popup next to the image
+            container.classList.toggle('active');
         });
-      });
 
-      // Handle close button click to hide popup
-      closeButtons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          this.closest('.popup').style.display = 'none';
+        // Select item and update dropdown
+        customSelectList.querySelectorAll('li').forEach(item => {
+            item.addEventListener('click', function() {
+
+                customSelectBox.innerHTML = this.innerHTML;
+                container.classList.remove('active'); // Close dropdown after selection
+                customSelectList.style.maxHeight = '0'; // Collapse dropdown
+                addToCartForm.style.marginTop = '0'; // Move Add to Cart button back up
+                // Center the text after selection
+                customSelectBox.classList.add('center-text');
+            });
         });
-      });
 
-
-      // Capture the selected size from the list items
-      var sizeOptions = document.querySelectorAll('.size-option');
-      sizeOptions.forEach(function(option) {
-        option.addEventListener('click', function() {
-          selectedSize = this.getAttribute('data-value'); // Get the size value from the clicked element
-          console.log('Selected Size:', selectedSize); // Debugging
+        // Close dropdown if clicked outside
+        document.addEventListener('click', function(e) {
+            if (!container.contains(e.target)) {
+                container.classList.remove('active');
+            }
         });
-      });
-
-      // Add to Cart functionality
-      const addToCartButtons = document.querySelectorAll('.add-to-cart');
-      addToCartButtons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-
-          event.stopPropagation(); // Prevent popup close on button click
-          var popup = this.closest('.popup-details');
-
-          // Assuming you have access to product and variant IDs in Liquid
-          var productId = "{{ product.selected_or_first_available_variant.id }}"; // Or {{ product.id }} for the product ID
-          console.log('Product ID:', productId); // Debugging
-
-          var selectedColor = popup.querySelector('.color-options .color-option.selected')?.textContent || ''; // Assuming color options
-
-          // Prepare data for adding to cart
-          var data = {
-            items: [{
-              id: productId,  // Use the productId retrieved earlier
-              quantity: 1,
-              properties: {
-                'Size': selectedSize,  // Use the selected size from earlier
-                'Color': selectedColor  // Use the selected color
-              }
-            }]
-          };
-
-          // Send AJAX request to add the item to the cart
-     fetch('/cart/add.js', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-    },
-    body: JSON.stringify(data)
-  })
-  .then(response => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      console.error('Response not OK:', response);
-      throw new Error('Network response was not ok. Status: ' + response.status);
-    }
-  })
-  .then(data => {
-    console.log('Item added to cart:', data);
-  })
-  .catch((error) => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
-
-        });
-      });
     });
 
-  //Drop Down Collapse
 
-  document.querySelectorAll('.dropdown-container').forEach(container => {
+
+document.addEventListener("DOMContentLoaded", function() {
+    var imageWrappers = document.querySelectorAll('.image-wrapper');
+    var popups = document.querySelectorAll('.popup');
+    var closeButtons = document.querySelectorAll('.close');
+    var selectedSize = ""; // Placeholder for selected size
+
+    // Handle image click to show popup
+
+    imageWrappers.forEach(function(wrapper) {
+        wrapper.addEventListener('click', function() {
+            document.querySelectorAll('div.popupss').forEach(function(popup) {
+                popup.style.display = 'none';
+            });
+            var popupId = wrapper.getAttribute('data-popup');
+            var popup = document.getElementById(popupId);
+            popup.style.display = 'block';
+            popup.style.left = wrapper.offsetWidth + 'px'; // Show the popup next to the image
+        });
+    });
+
+    // Handle close button click to hide popup
+    closeButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            this.closest('.popup').style.display = 'none';
+        });
+    });
+
+
+    // Capture the selected size from the list items
+    var sizeOptions = document.querySelectorAll('.size-option');
+    sizeOptions.forEach(function(option) {
+        option.addEventListener('click', function() {
+            selectedSize = this.getAttribute('data-value'); // Get the size value from the clicked element
+            console.log('Selected Size:', selectedSize); // Debugging
+        });
+    });
+
+    // Add to Cart functionality
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+
+            event.stopPropagation(); // Prevent popup close on button click
+            var popup = this.closest('.popup-details');
+
+            // Assuming you have access to product and variant IDs in Liquid
+            var productId = "{{ product.selected_or_first_available_variant.id }}"; // Or {{ product.id }} for the product ID
+            console.log('Product ID:', productId); // Debugging
+
+            var selectedColor = popup.querySelector('.color-options .color-option.selected')?.textContent || ''; // Assuming color options
+
+            // Prepare data for adding to cart
+            var data = {
+                items: [{
+                    id: productId, // Use the productId retrieved earlier
+                    quantity: 1,
+                    properties: {
+                        'Size': selectedSize, // Use the selected size from earlier
+                        'Color': selectedColor // Use the selected color
+                    }
+                }]
+            };
+
+            // Send AJAX request to add the item to the cart
+            fetch('/cart/add.js', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        console.error('Response not OK:', response);
+                        throw new Error('Network response was not ok. Status: ' + response.status);
+                    }
+                })
+                .then(data => {
+                    console.log('Item added to cart:', data);
+                })
+                .catch((error) => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+
+        });
+    });
+});
+
+//Drop Down Collapse
+
+document.querySelectorAll('.dropdown-container').forEach(container => {
     const dropdownBox = container.querySelector('.drop-downs');
     const dropdownList = container.querySelector('.dropdown-lists');
     const addToCartForm = document.querySelector('.add_form');
 
     dropdownBox.addEventListener('click', function() {
-      const isOpen = dropdownList.style.maxHeight !== '0px';
+        const isOpen = dropdownList.style.maxHeight !== '0px';
 
-      if (!isOpen) {
-        dropdownList.style.maxHeight = dropdownList.scrollHeight + 'px'; // Expand dropdown
-        addToCartForm.style.marginTop = `${dropdownList.scrollHeight + 20}px`; // Move Add to Cart button down
-      } else {
-        dropdownList.style.maxHeight = '0'; // Collapse dropdown
-        addToCartForm.style.marginTop = '0'; // Move Add to Cart button back up
-      }
+        if (!isOpen) {
+            dropdownList.style.maxHeight = dropdownList.scrollHeight + 'px'; // Expand dropdown
+            addToCartForm.style.marginTop = `${dropdownList.scrollHeight + 20}px`; // Move Add to Cart button down
+        } else {
+            dropdownList.style.maxHeight = '0'; // Collapse dropdown
+            addToCartForm.style.marginTop = '0'; // Move Add to Cart button back up
+        }
     });
 
     // Close dropdown if clicked outside
     document.addEventListener('click', function(e) {
-      if (!container.contains(e.target) && dropdownList.style.maxHeight !== '0px') {
-        dropdownList.style.maxHeight = '0'; // Collapse dropdown
-        addToCartForm.style.marginTop = '0'; // Reset button position
-      }
+        if (!container.contains(e.target) && dropdownList.style.maxHeight !== '0px') {
+            dropdownList.style.maxHeight = '0'; // Collapse dropdown
+            addToCartForm.style.marginTop = '0'; // Reset button position
+        }
     });
-  });
+});
 
-    document.querySelectorAll(".add-to-cart").forEach(atc=>{
-      atc.addEventListener("click", function(e){
+document.querySelectorAll(".add-to-cart").forEach(atc => {
+    atc.addEventListener("click", function(e) {
 
 
         e.preventDefault();
         let $this = this;
 
         let _product = this.dataset.product;
-        all_products.forEach(product=>{
-      if(product.product == _product){
+        all_products.forEach(product => {
+            if (product.product == _product) {
 
-        let parentObect = document.querySelector('[data-parent="'+ product.product +'"]');
+                let parentObect = document.querySelector('[data-parent="' + product.product + '"]');
 
-        let size = parentObect.querySelector(".drop-downs").innerText.trim();
-        let color = parentObect.querySelector("input:checked").value;
-     
+                let size = parentObect.querySelector(".drop-downs").innerText.trim();
+                let color = parentObect.querySelector("input:checked").value;
 
-        let variants = JSON.parse(product.variants);
-        variants.forEach(variant=>{
 
-          if(variant.option1 == size && variant.option2 == color){
-          this.closest("form").querySelector("input[name='id']").value = variant.id;
-          this.closest("form").submit();
+                let variants = JSON.parse(product.variants);
+                variants.forEach(variant => {
 
-          }
+                    if (variant.option1 == size && variant.option2 == color) {
+                        this.closest("form").querySelector("input[name='id']").value = variant.id;
+                        this.closest("form").submit();
+
+                    }
+                })
+            }
         })
-      }
-  })
-      })
     })
+})
 
-  const closeButtons = document.querySelectorAll('.close');
+const closeButtons = document.querySelectorAll('.close');
 
-  closeButtons.forEach(function(button) {
+closeButtons.forEach(function(button) {
     button.addEventListener('click', function() {
 
-      button.closest('.popupss').style.display = 'none';
+        button.closest('.popupss').style.display = 'none';
     });
-  });
+});
 
 
-</script>
-<script>
-  // Select all divs with the class .Color-option and .Size-option
-  const colorOptions = document.querySelectorAll('.Color-option');
-  const sizeOptions = document.querySelectorAll('.size-option');
+</script> 
+  <script >
+    // Select all divs with the class .Color-option and .Size-option
+    const colorOptions = document.querySelectorAll('.Color-option');
+const sizeOptions = document.querySelectorAll('.size-option');
 
-  // Function to handle selection of options
-  function handleSelection(options) {
-      options.forEach(option => {
-          option.addEventListener('click', function() {
-              // Remove the 'selected' class from all options in the same group
-              options.forEach(option => option.classList.remove('selected'));
+// Function to handle selection of options
+function handleSelection(options) {
+    options.forEach(option => {
+        option.addEventListener('click', function() {
+            // Remove the 'selected' class from all options in the same group
+            options.forEach(option => option.classList.remove('selected'));
 
-              // Add the 'selected' class to the clicked option
-              this.classList.add('selected');
-          });
-      });
-  }
+            // Add the 'selected' class to the clicked option
+            this.classList.add('selected');
+        });
+    });
+}
 
-  // Apply the function to color options and size options
-  handleSelection(colorOptions);
-  handleSelection(sizeOptions);
-</script>
-
+// Apply the function to color options and size options
+handleSelection(colorOptions);
+handleSelection(sizeOptions); 
+  </script>

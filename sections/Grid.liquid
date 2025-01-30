@@ -13,6 +13,7 @@
 
             {% assign product = block.settings.product_image %}
             <script>
+
               all_products.push({
                 product : `{{ product.id }}`,
                 variants : `{{ product.variants | json }}`
@@ -157,6 +158,7 @@
   "presets": [
     {
       "name": "Grids",
+      "category": "Custom"
     }
   ]
 }

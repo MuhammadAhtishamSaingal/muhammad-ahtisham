@@ -202,61 +202,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log('Selected Size:', selectedSize); // Debugging
         });
     });
-      document.querySelectorAll('.dropdown-container').forEach(container => {
 
-        const customSelectBox = container.querySelector('.drop-downs');
-        const customSelectList = container.querySelector('.dropdown-lists');
-        const addToCartForm = document.querySelector('.add_form');
-
-        // Toggle dropdown open/close and rotate arrow
-        customSelectBox.addEventListener('click', function() {
-
-            container.classList.toggle('active');
-        });
-
-        // Select item and update dropdown
-        customSelectList.querySelectorAll('li').forEach(item => {
-            item.addEventListener('click', function() {
-
-                customSelectBox.innerHTML = this.innerHTML;
-                container.classList.remove('active'); // Close dropdown after selection
-                customSelectList.style.maxHeight = '0'; // Collapse dropdown
-                addToCartForm.style.marginTop = '0'; // Move Add to Cart button back up
-                // Center the text after selection
-                customSelectBox.classList.add('center-text');
-            });
-        });
-
-        // Close dropdown if clicked outside
-        document.addEventListener('click', function(e) {
-            if (!container.contains(e.target)) {
-                container.classList.remove('active');
-            }
-        });
-    });
-
-
-      // Select all divs with the class .Color-option and .Size-option
-      const colorOptions = document.querySelectorAll('.Color-option');
-  const sizeOptions = document.querySelectorAll('.size-option');
-
-  // Function to handle selection of options
-  function handleSelection(options) {
-      options.forEach(option => {
-          option.addEventListener('click', function() {
-              // Remove the 'selected' class from all options in the same group
-              options.forEach(option => option.classList.remove('selected'));
-
-              // Add the 'selected' class to the clicked option
-              this.classList.add('selected');
-          });
-      });
-  }
-
-  // Apply the function to color options and size options
-  handleSelection(colorOptions);
-  handleSelection(sizeOptions);
-  
     // Add to Cart functionality
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     addToCartButtons.forEach(function(button) {
@@ -378,4 +324,60 @@ closeButtons.forEach(function(button) {
         button.closest('.popupss').style.display = 'none';
     });
 });
+</script>
+<script>
+      document.querySelectorAll('.dropdown-container').forEach(container => {
+
+        const customSelectBox = container.querySelector('.drop-downs');
+        const customSelectList = container.querySelector('.dropdown-lists');
+        const addToCartForm = document.querySelector('.add_form');
+
+        // Toggle dropdown open/close and rotate arrow
+        customSelectBox.addEventListener('click', function() {
+
+            container.classList.toggle('active');
+        });
+
+        // Select item and update dropdown
+        customSelectList.querySelectorAll('li').forEach(item => {
+            item.addEventListener('click', function() {
+
+                customSelectBox.innerHTML = this.innerHTML;
+                container.classList.remove('active'); // Close dropdown after selection
+                customSelectList.style.maxHeight = '0'; // Collapse dropdown
+                addToCartForm.style.marginTop = '0'; // Move Add to Cart button back up
+                // Center the text after selection
+                customSelectBox.classList.add('center-text');
+            });
+        });
+
+        // Close dropdown if clicked outside
+        document.addEventListener('click', function(e) {
+            if (!container.contains(e.target)) {
+                container.classList.remove('active');
+            }
+        });
+    });
+
+
+      // Select all divs with the class .Color-option and .Size-option
+      const colorOptions = document.querySelectorAll('.Color-option');
+  const sizeOptions = document.querySelectorAll('.size-option');
+
+  // Function to handle selection of options
+  function handleSelection(options) {
+      options.forEach(option => {
+          option.addEventListener('click', function() {
+              // Remove the 'selected' class from all options in the same group
+              options.forEach(option => option.classList.remove('selected'));
+
+              // Add the 'selected' class to the clicked option
+              this.classList.add('selected');
+          });
+      });
+  }
+
+  // Apply the function to color options and size options
+  handleSelection(colorOptions);
+  handleSelection(sizeOptions);
 </script>

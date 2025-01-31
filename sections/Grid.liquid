@@ -165,40 +165,6 @@
 {% endschema %}
 
 <script>
-    document.querySelectorAll('.dropdown-container').forEach(container => {
-
-        const customSelectBox = container.querySelector('.drop-downs');
-        const customSelectList = container.querySelector('.dropdown-lists');
-        const addToCartForm = document.querySelector('.add_form');
-
-        // Toggle dropdown open/close and rotate arrow
-        customSelectBox.addEventListener('click', function() {
-
-            container.classList.toggle('active');
-        });
-
-        // Select item and update dropdown
-        customSelectList.querySelectorAll('li').forEach(item => {
-            item.addEventListener('click', function() {
-
-                customSelectBox.innerHTML = this.innerHTML;
-                container.classList.remove('active'); // Close dropdown after selection
-                customSelectList.style.maxHeight = '0'; // Collapse dropdown
-                addToCartForm.style.marginTop = '0'; // Move Add to Cart button back up
-                // Center the text after selection
-                customSelectBox.classList.add('center-text');
-            });
-        });
-
-        // Close dropdown if clicked outside
-        document.addEventListener('click', function(e) {
-            if (!container.contains(e.target)) {
-                container.classList.remove('active');
-            }
-        });
-    });
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
     var imageWrappers = document.querySelectorAll('.image-wrapper');
@@ -360,6 +326,40 @@ closeButtons.forEach(function(button) {
 });
 </script>
 <script>
+      document.querySelectorAll('.dropdown-container').forEach(container => {
+
+        const customSelectBox = container.querySelector('.drop-downs');
+        const customSelectList = container.querySelector('.dropdown-lists');
+        const addToCartForm = document.querySelector('.add_form');
+
+        // Toggle dropdown open/close and rotate arrow
+        customSelectBox.addEventListener('click', function() {
+
+            container.classList.toggle('active');
+        });
+
+        // Select item and update dropdown
+        customSelectList.querySelectorAll('li').forEach(item => {
+            item.addEventListener('click', function() {
+
+                customSelectBox.innerHTML = this.innerHTML;
+                container.classList.remove('active'); // Close dropdown after selection
+                customSelectList.style.maxHeight = '0'; // Collapse dropdown
+                addToCartForm.style.marginTop = '0'; // Move Add to Cart button back up
+                // Center the text after selection
+                customSelectBox.classList.add('center-text');
+            });
+        });
+
+        // Close dropdown if clicked outside
+        document.addEventListener('click', function(e) {
+            if (!container.contains(e.target)) {
+                container.classList.remove('active');
+            }
+        });
+    });
+
+
       // Select all divs with the class .Color-option and .Size-option
       const colorOptions = document.querySelectorAll('.Color-option');
   const sizeOptions = document.querySelectorAll('.size-option');

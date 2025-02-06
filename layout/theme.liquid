@@ -378,11 +378,9 @@
   </body>
 </html>
 <script>
-  function reverseNumber(arr){
-    for(let i = arr.length;i>=0;i--){
-      console.log(arr[i])
-    }
+  let printedFive= false;
+  for(let i = 1; i<=10; i++){
+   let num = i === 0 ? 5 : i < 5 ? i : i+ 1;
+    console.log(num)
   }
-  const numbers = [9,8,7,6,5,4,3,2,1,0];
-  reverseNumber(numbers)
 </script>
